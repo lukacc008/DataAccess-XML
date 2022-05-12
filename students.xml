@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+    <student id="1">
+         <first_name>John</first_name>
+         <last_name>Smith</last_name>
+         <semester>4</semester>
+    </student>
+    <student id="2">
+         <first_name>Jane</first_name>
+         <last_name>Smith</last_name>
+         <semester>8</semester>
+    </student>
+    <student id="3">
+         <first_name>James</first_name>
+         <last_name>Welch</last_name>
+         <semester>2</semester>
+    </student>
+    <student id="4">
+         <first_name>Joanna</first_name>
+         <last_name>Welch</last_name>
+         <semester>6</semester>
+    </student>
+</students>

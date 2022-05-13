@@ -7,16 +7,57 @@
     <title>Students</title>
 </head>
 <body>
+    <p><b>Filter by semester:</b></p>
+    <select id="semester_filter">
+        <option value="-1" selected>All</option>
+        <option value="2">Second</option>
+        <option value="4">Fourth</option>
+        <option value="6">Sixth</option>
+        <option value="8">Eighth</option>
+    </select>
+    <div id="students"></div>
     
     <script>
-       function load_handler() {
-            if(this.status == 200 && this.readyState ==4) {
-                console.log(this.responseXML)
+       function semester_filter_handler(xhr, select_semester) {
+            if(xhr.status == 200 && xhr.readyState ==4) {
+                const divStudents = document.querySelector("#students")
+                divStudents.innerHTML = ""
+                students = xhr.responseXML.querySelectorAll("student")
+                for (let student of students){
+                    const student_id = student.getAttribute("id")
+                    const first_name = student.querySelector("first_name").textContent
+                    const last_name = student.querySelector("last_name").textContent
+                    const semester = student.querySelector("semester").textContent
+
+                    if(select_semester == -1 || semester == select_semester)
+                   {
+                    divStudents.innerHTML += `
+                    <div>
+                        <p><b>ID:</b> ${student_id}</p>
+                        <p><b>First name:</b> ${first_name}</p>
+                        <p><b>Last name:</b> ${last_name}</p>
+                        <p><b>Semester:</b> ${semester}</p>
+                    </div>
+                    `
+                   }
+                }
+                
             }
        }
 
+       const select_semester = document.querySelector("#semester_filter")
+
+       select_semester.onchange = () => {
+         const xhr = new XMLHttpRequest()
+         xhr.onload = () => semester_filter_handler(xhr, select_semester.value)
+         xhr.open("GET", "./students.xml")
+         xhr.send()
+       }
+
+      
+
        const xhr = new XMLHttpRequest()
-       xhr.onload = load_handler
+       xhr.onload = () => semester_filter_handler(xhr, -1)
        xhr.open("GET", "./students.xml")
        xhr.send()
 

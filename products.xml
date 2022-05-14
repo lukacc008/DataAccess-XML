@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<products>
+  <product id="1">
+   <title>HP Laptop OMEN 16-b0004</title>
+   <price>149990</price>
+   <image>https://static.tehnomanija.rs/UserFiles/products/2022/001/large/185994.webp</image>
+   <category>Laptop</category>
+   <details>https://www.tehnomanija.rs/it-shop/laptop-racunari/hp-omen-16-b0004na.html?_sgm_campaign=scn_9528921780000&_sgm_source=185994&_sgm_action=click</details>
+  </product>
+
+  <product id="2">
+   <title>HP Laptop 15s-fq3022nm</title>
+   <price>45990</price>
+   <image>https://static.tehnomanija.rs/UserFiles/products/2022/005/large/192750.webp</image>
+   <category>Laptop</category>
+   <details>https://www.tehnomanija.rs/it-shop/laptop-racunari/hp-15s-fq3022nm.html?_sgm_campaign=scn_9528921780000&_sgm_source=192750&_sgm_action=click</details>
+  </product>
+
+  <product id="3">
+   <title>HP Laptop 250 G8 3V5L2EA</title>
+   <price>64990</price>
+   <image>https://static.tehnomanija.rs/UserFiles/products/2022/006/large/190054.webp</image>
+   <category>Laptop</category>
+   <details>https://www.tehnomanija.rs/it-shop/laptop-racunari/hp-laptop-250-g8-3v5l2ea.html?_sgm_campaign=scn_9528921780000&_sgm_source=190054&_sgm_action=click</details>
+  </product>
+
+  <product id="4">
+   <title>HP Laptop Pavilion Gaming</title>
+   <price>115990</price>
+   <image>https://static.tehnomanija.rs/UserFiles/products/2022/005/large/188738.webp</image>
+   <category>Laptop</category>
+   <details>https://www.tehnomanija.rs/it-shop/laptop-racunari/hp-pavilion-gaming-17-cd2038nm.html?_sgm_campaign=scn_9528921780000&_sgm_source=188738&_sgm_action=click</details>
+  </product>
+
+  <product id="5">
+   <title>Huawei Laptop MateBook</title>
+   <price>69000</price>
+   <image>https://static.tehnomanija.rs/UserFiles/products/2021/020/large/172184.webp</image>
+   <category>Laptop</category>
+   <details>https://www.tehnomanija.rs/it-shop/laptop-racunari/huawei-matebook-d14-intel-core-i3.html?_sgm_campaign=scn_9528921780000&_sgm_source=172184&_sgm_action=click</details>
+  </product>
+
+</products>

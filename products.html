@@ -15,6 +15,29 @@
         <button id="reset">Reset</button>
     </p>
 
+    <script>
+       const btnFilter = document.querySelector("#filter")
+       const btnReset = document.querySelector("#reset")
+       const inputMin = document.querySelector("#min")
+       const inputMax = document.querySelector("#max")
+
+       function display_products(min_price, max_price) {
+           const xhr = new XMLHttpRequest()
+           xhr.onload = () => {
+               if(xhr.status == 200 && xhr.readyState == 4) {
+                   products = xhr.responseXML.querySelectorAll("product")
+                   const product_price = product.querySelector("price")
+
+                   for(let product of products) {
+                       if( (min_price != -1 && max_price !=-1) || 
+                       (product_price >= min_price && product_price <= max_price)
+                       ) }
+                   }
+               }
+           }
+       }
+
+    </script>
 
 </body>
 </html>
